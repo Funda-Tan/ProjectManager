@@ -3,24 +3,22 @@
 Below is a record of our project group meetings. This page will be submitted together with the rest of the repository, in partial fulfillment of the CS102 course requirements.
 
 ****
-### Meeting ~ (date, duration)
+### Meeting ~ (25.04.2020)
 ****
-**Present:** x, y, z...   _**Absent:**_  a, b.
+**Present:** Funda, Cem, Elifnur, Onat   _**Absent:**_  Ece
 
 **Discussion:** 
-We reviewed progress. Member1 & member2 reported back, explaining that they had discovered rst and demonstrated some useful examples. Member3 had slept and has not yet completed his task, but promised to do so this week! We decided we need to do this, that, and the other, and divided the work between us. Next meeting planned for (date).
+Trying to learn and understand how android studio, database, and uml works. 
 
-**ToDo:** x & y will do this by ???, z & a will do that by ???, etc.
-
-****
-### Meeting ~ (date, duration)
-****
-This week I helped abc brainstorm ideas for...
+**ToDo:** Cem and Elifnur will look at android studio and database, funda will look at uml, and onat will look at firebase.
 
 ****
-### Meeting ~ (date, duration)
+### Meeting ~ (02.05.2020, 5 min)
 ****
-blah, blah, blah...
+**Present:** Funda, Cem, Elifnur, Ece   _**Absent:**_ Onat
 
-****
+**Discussion:**
+We reviewed what each member has already done and assigned new works.
+
+**ToDo:** Cem has done the administration page and connected it to a database so he will continue with the options menu, Elifnur and Funda will continue with the pages from options menu, Ece will complete the GitHub logs.
 ****
