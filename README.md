@@ -18,12 +18,13 @@ _Our project "ProjectManager" is a simplified mobile management program. Our tar
 + **Reflections:** not yet!
 
 [Group Meetings Log](group/meetingslog.md)
+
 #### Group Members
-- [Funda Tan](group/member1_log.md)    _(full name & link to personal log file)_
+- [Funda Tan](group/member1_log.md)
 - [Onat Korkmaz](group/member2_log.md)
-- Cem Apaydın
-- Elifnur Alsaç
-- Ece Kahraman
+- [Cem Apaydın](group/member3_log.md)
+- [Elifnur Alsaç](group/member4_log.md)
+- [Ece Kahraman](group/member5_log.md)
 
 ****
 **Instructor:** _David Davenport_   **TA:**  _Mustafa Duymuş_
