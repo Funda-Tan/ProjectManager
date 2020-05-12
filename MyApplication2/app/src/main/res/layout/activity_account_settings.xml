@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/framebackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSettings">
+
+    <Button
+        android:id="@+id/button2"
+        android:background="@drawable/buttunbackground"
+        android:textStyle="bold"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ReseT Your ProfIl Image"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:background="@drawable/buttunbackground"
+        android:textStyle="bold"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHANGE YOUR NICKNAME"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:background="@drawable/buttunbackground"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text="CHANGE YOUR PASSWORD"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+</LinearLayout>
+
