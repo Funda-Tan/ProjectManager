@@ -21,4 +21,41 @@ Trying to learn and understand how android studio, database, and uml works.
 We reviewed what each member has already done and assigned new works.
 
 **ToDo:** Cem has done the administration page and connected it to a database so he will continue with the options menu, Elifnur and Funda will continue with the pages from options menu, Ece will complete the GitHub logs.
+
+****
+### Meeting ~ (04.05.2020)
+****
+**Present:** Funda, Onat, Cem, Elifnur, Ece   _**Absent:**_  None
+
+**Discussion:** 
+Reviewed the already done page frames, and assigned classes.
+
+**ToDo:** 
+Assigned classes:
+Cem: the DatabaseStorage, Register_Page and RandomString classes 
+Elifnur: the CreateProject and YourProjects classes 
+Onat: the AccountSettings and JoinProject classes 
+Ece: the RegisterPage and MainProjectPage classes 
+Funda: the NewFrame and Project classes 
+
+****
+### Meeting ~ (12.05.2020)
+****
+**Present:** Cem, Funda, Ece   _**Absent:**_  Onat, Elifnur
+
+**Discussion:** 
+Just checked on each other.
+
+**ToDo:** 
+
+****
+### Meeting ~ (14.05.2020)
+****
+**Present:** Cem, Elifnur, Onat, Ece  _**Absent:**_ Funda
+
+**Discussion:** 
+We discussed how far we are in our parts and also completed detailed design report. 
+
+**ToDo:** 
+
 ****
