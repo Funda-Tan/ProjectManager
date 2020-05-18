@@ -12,6 +12,6 @@ This week I tried to get familiar with Android Studio and shared my ideas with t
 This week I started working on class hierarchy and wrote classes and some methods. We will try to integrate these classes with the project.
 
 ### ~ 11.05.2020 ~
-This week I started looking at MyProjects class.
+This week I started looking at NewFrame and Project classes.
 
 ****
