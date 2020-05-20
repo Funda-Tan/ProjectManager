@@ -9,9 +9,8 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 This week I tried to get familiar with Android Studio and shared my ideas with the group.
 
 ### ~ 04.05.2020 ~
-This week I started working on class hierarchy and wrote classes and some methods. We will try to integrate these classes with the project.
+This week I started working on ParticipantsPage page their methods.
 
 ### ~ 11.05.2020 ~
-This week I worked on ParticipantsPage and AddAssignment classes.
-
+This week I finished ParticipantsPage and stated working on AddAssignment class. Cem will make this classes work with database.
 ****
