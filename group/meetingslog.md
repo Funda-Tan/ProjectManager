@@ -34,9 +34,9 @@ Reviewed the already done page frames, and assigned classes.
 Assigned classes:
 Cem: the DatabaseStorage, RandomString classes 
 Elifnur: the CreateProject
-Onat: the MainProject
-Ece: the RegisterPage
-Funda: the NewFrame and Project classes
+Onat: the MainPage, and ProjectActivity classes
+Ece: the RegisterPage, and mainActivity classes
+Funda: 
 
 ****
 ### Meeting ~ (12.05.2020)
