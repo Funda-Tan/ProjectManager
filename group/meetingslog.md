@@ -32,7 +32,7 @@ Reviewed the already done page frames, and assigned classes.
 
 **ToDo:** 
 Assigned classes:
-Cem: the DatabaseStorage, RandomString classes 
+Cem: the DatabaseStorage, RandomString, YourProject classes 
 Elifnur: the CreateProject, and AccountSettings classes
 Onat: the MainProjectPage, and ProjectActivity classes
 Ece: the RegisterPage, and AdministrationPage classes
