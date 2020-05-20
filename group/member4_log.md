@@ -12,7 +12,7 @@ This week, I tried to learn Android Studio program and shared our ideas on desig
 This week I started writing the CreateProject class, except database part, and continued to create user interfaces on Android Studio.
 
 ### ~ 11.05.2020 ~
-This week I started writing the YourProject class, except database part.
+This week I started writing the AccountSettings class, except database part.
 
 
 ****
