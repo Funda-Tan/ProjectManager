@@ -35,7 +35,7 @@ Assigned classes:
 Cem: the DatabaseStorage, RandomString classes 
 Elifnur: the CreateProject, and AccountSettings classes
 Onat: the MainProjectPage, and ProjectActivity classes
-Ece: the RegisterPage, and mainActivity classes
+Ece: the RegisterPage, and AdministrationPage classes
 Funda: The NewFrame, and ParticipantsMainPage classes
 
 ****
