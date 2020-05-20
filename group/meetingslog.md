@@ -10,7 +10,7 @@ Below is a record of our project group meetings. This page will be submitted tog
 **Discussion:** 
 Trying to learn and understand how android studio, database, and uml works. 
 
-**ToDo:** Cem and Elifnur will look at android studio and database, funda will look at uml, and onat will look at firebase.
+**ToDo:** Cem and Elifnur will look at android studio and database, Funda will look at uml, and Onat will look at firebase.
 
 ****
 ### Meeting ~ (02.05.2020, 5 min)
