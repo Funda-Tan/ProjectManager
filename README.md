@@ -4,7 +4,6 @@ The information and code in this repository are submitted in partial fulfillment
 ****
 ## g1B ~~ ProjectManager ~~
 ****
-### ~ optional group name ~
 
 ## Project Description
 _Our project "ProjectManager" is a simplified mobile management program. Our target demograpic is anyone who does not need management systems aimed at corporate use. Each member can send messages privately, can upload assignment files, and create a project and invite other people. The manager can also see the status of progress for each member, assign works, view the whole timeline of the planned work on a calender, and make changes in the project details._
