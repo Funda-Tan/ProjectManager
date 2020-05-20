@@ -32,11 +32,11 @@ Reviewed the already done page frames, and assigned classes.
 
 **ToDo:** 
 Assigned classes:
-Cem: the DatabaseStorage, Register_Page and RandomString classes 
-Elifnur: the CreateProject and YourProjects classes 
-Onat: the AccountSettings and JoinProject classes 
-Ece: the RegisterPage and MainProjectPage classes 
-Funda: the NewFrame and Project classes 
+Cem: the DatabaseStorage, RandomString classes 
+Elifnur: the CreateProject
+Onat: the MainProject
+Ece: the RegisterPage
+Funda: the NewFrame and Project classes
 
 ****
 ### Meeting ~ (12.05.2020)
