@@ -9,9 +9,9 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 This week I tried to get comfortable with Android Studio and shared my ideas on design.
 
 ### ~ 04.05.2020 ~
-This week I was assigned with register page and main activity classes. My register page codes will be combined with Cem's. I tried to plan my hierarchies and started to write my classes.
+This week I was assigned with register page, administration page, and main activity classes. My register page codes will be combined with Cem's. I tried to plan my hierarchies and started to write my classes.
 
 ### ~ 13.05.2020 ~
-This week I completed register page codes and Cem will connect it to the database. I moved to writing the main activity classes. Hopefully I will quickly complete them.
+This week I completed register page and administration page codes, and Cem will connect it to the database. I moved to writing the main activity classes. Hopefully I will quickly complete them.
 
 ****
