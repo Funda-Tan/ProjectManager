@@ -59,13 +59,7 @@ public class DatabaseStorage {
     }
     //Methods
 
-    /*
-     *
-     *
-     */
-    public void addElementToUserNames( String str)
-    {
-    }
+
 
 
     public void setStatement( boolean stm)
@@ -82,7 +76,7 @@ public class DatabaseStorage {
     *
     *
      */
-    public boolean newUser(final String eMail, final String name, final String password)
+    public void newUser(final String eMail, final String name, final String password)
     {
 
         //Variables
@@ -110,59 +104,12 @@ public class DatabaseStorage {
 
                         }
                     });
-
-
-                    setStatement(true);
                 }
             }
         });
 
-        return getStatement();
     }
 
-    /*
-    *
-    *
-     */
-    public boolean signInUser( String email, String password)
-    {
-
-        MainActivity mainActivity = new MainActivity();
-        setStatement(false);
-
-        mAuth.signInWithEmailAndPassword( email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful())
-                {
-                    FirebaseUser currentUser = mAuth.getCurrentUser();
-
-                    userID = currentUser.getUid();
-
-                    db.collection( "users").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
-
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-
-                                if ( userID == document.getId())
-                                {
-
-                                    Map<String, Object> users = document.getData();
-
-
-                                }
-                            }
-                        }
-                    });
-                    setStatement(true);
-
-                }
-            }
-        });
-
-        return stm;
-    }
 
     /*
     *

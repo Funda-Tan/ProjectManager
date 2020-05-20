@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JoinProject"></activity>
+        <activity android:name=".AssignmentView"></activity>
+        <activity android:name=".AssignmentsProject" />
+        <activity android:name=".AddAssignment" />
+        <activity android:name=".ParticipantMainPage" />
+        <activity android:name=".ParticipantsPage" />
+        <activity android:name=".JoinProject" />
         <activity android:name=".YourProjects" />
         <activity android:name=".AccountSettings" />
         <activity android:name=".MainProjectPage" />

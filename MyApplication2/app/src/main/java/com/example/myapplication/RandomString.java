@@ -37,7 +37,7 @@ public class RandomString extends AppCompatActivity {
 
         Intent get = getIntent();
         projectInventatioCode = get.getStringExtra( "inventation");
-        projectName = get.getStringExtra( "name");
+        projectName = get.getStringExtra( "Project Name");
 
         toProjectButton = findViewById(R.id.button8);
         projectCode = findViewById(R.id.textView6);
@@ -48,13 +48,10 @@ public class RandomString extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent newIntent = new Intent( RandomString.this, MainProjectPage.class);
 
-
-
-                        Intent newIntent = new Intent( RandomString.this, MainProjectPage.class);
-
-                        newIntent.putExtra( "Project name", projectName);
-                        startActivity( newIntent);
+                newIntent.putExtra( "Project name", projectName);
+                startActivity( newIntent);
 
 
             }

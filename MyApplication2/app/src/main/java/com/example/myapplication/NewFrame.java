@@ -10,18 +10,20 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class NewFrame extends AppCompatActivity {
 
     //Variables
-    private MainActivity name = new MainActivity();
     private String textName;
     private String userId;
     private TextView nameText;
     private Button createProjectButton;
     private Button yourProjects;
     private Button joinproject;
+    private Button signOut;
     private ImageButton accountSettings;
-    private EditText projectNameEditText;
+    private FirebaseAuth mAuth;
 
     //Constructors
 
@@ -34,8 +36,11 @@ public class NewFrame extends AppCompatActivity {
         createProjectButton = findViewById(R.id.button2);
         yourProjects = findViewById(R.id.button6);
         joinproject = findViewById(R.id.button4);
+        signOut = findViewById(R.id.button7);
         accountSettings = findViewById(R.id.imageButton2);
         nameText=findViewById(R.id.textView4);
+
+        mAuth = FirebaseAuth.getInstance();
 
         Intent get = getIntent();
         textName = get.getStringExtra("Input");
@@ -84,6 +89,17 @@ public class NewFrame extends AppCompatActivity {
             }
         });
 
+
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mAuth.signOut();
+
+                Intent backToMainFrame = new Intent( NewFrame.this, MainActivity.class);
+                startActivity( backToMainFrame);
+            }
+        });
 
     }
 }

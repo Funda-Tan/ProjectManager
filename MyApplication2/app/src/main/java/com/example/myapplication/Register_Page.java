@@ -31,16 +31,67 @@ public class Register_Page extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextName;
     private EditText editTextPassword;
-    private DatabaseStorage strg = new DatabaseStorage();
+    private FirebaseAuth mAuth;
+    private FirebaseFirestore fStore;
     private String nameMessage;
     private String passwordMessage;
     private String emailMessage;
+    private String userID;
+    private boolean stm;
 
     //Constructors
 
 
     //Methods
 
+    public void setStatement( boolean stm)
+    {
+        this.stm = stm;
+    }
+
+    public boolean getStatement()
+    {
+        return stm;
+    }
+
+    public boolean newUser(final String eMail, final String name, final String password)
+    {
+
+        //Variables
+
+        // Program Code
+
+        mAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+
+        mAuth.createUserWithEmailAndPassword( eMail, password).addOnCompleteListener( new OnCompleteListener<AuthResult>() {
+
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+
+                if ( task.isSuccessful())
+                {
+
+                    userID = mAuth.getCurrentUser().getUid();
+                    Map<String, Object> user = new HashMap<>();
+                    user.put( "Name", name);
+                    user.put( "Password", password);
+                    user.put( "Email Adress", eMail);
+                    user.put( "Project Number", 0);
+                    DocumentReference ref = fStore.collection( "users").document(userID);
+                    ref.set( user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+
+                            setStatement(true);
+                        }
+                    });
+                }
+            }
+        });
+        return getStatement();
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +105,8 @@ public class Register_Page extends AppCompatActivity {
         buttonSignUpRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
 
 
                 nameMessage = editTextName.getText().toString();
@@ -72,15 +125,15 @@ public class Register_Page extends AppCompatActivity {
                 }
 
                 else {
-                    if (strg.newUser(emailMessage, nameMessage, passwordMessage)) {
-                        Intent register = new Intent(Register_Page.this, MainActivity.class);
-                        startActivity(register);
-                        strg.addElementToUserNames(nameMessage);
+
+                        if(newUser(emailMessage, nameMessage, passwordMessage)) {
+                            Intent register = new Intent(Register_Page.this, MainActivity.class);
+                            startActivity(register);
+                        }
                     }
                 }
 
 
-            }
         });
     }
 }

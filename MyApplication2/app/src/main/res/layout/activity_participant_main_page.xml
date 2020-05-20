@@ -4,22 +4,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LinearLayout"
+    android:background = "@drawable/framebackground"
     android:orientation="vertical"
-    android:background="@drawable/framebackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountSettings">
+    tools:context=".ParticipantMainPage">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="#00000000"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editarkaplan"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:background="@drawable/asdasd"
+        android:layout_marginLeft="130dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button2"
         android:background="@drawable/buttunbackground"
         android:textStyle="bold"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="50sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CHANGE Your ProfIl Image"
+        android:text="Assignments"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="341dp" />
 
@@ -27,12 +55,12 @@
         android:id="@+id/button4"
         android:background="@drawable/buttunbackground"
         android:textStyle="bold"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="20sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CHANGE YOUR NICKNAME"
+        android:text="Add Assıgnment"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="266dp" />
 
@@ -41,11 +69,11 @@
         android:background="@drawable/buttunbackground"
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="20sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_height="wrap_content"
-        android:text="CHANGE YOUR PASSWORD"
+        android:text="Chat"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="425dp" />
 
@@ -54,14 +82,12 @@
         android:background="@drawable/backcuttonbackground"
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="20sp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_height="wrap_content"
-        android:text="backt to maın menu"
+        android:text="back to project"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="425dp" />
 
-
 </LinearLayout>
-

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -44,7 +45,6 @@ public class YourProjects extends AppCompatActivity {
     ArrayList<String> projects = new ArrayList<String>();
     ArrayList<String> list = new ArrayList<String>();
     String name;
-    DatabaseStorage strg = new DatabaseStorage();
 
 
     @Override
@@ -63,8 +63,6 @@ public class YourProjects extends AppCompatActivity {
 
         userID = mAuth.getCurrentUser().getUid();
 
-        FirebaseFirestore fStore;
-        fStore = FirebaseFirestore.getInstance();
         FirebaseDatabase database;
         database = FirebaseDatabase.getInstance();
 
@@ -78,34 +76,53 @@ public class YourProjects extends AppCompatActivity {
             button.setBackground( this.getResources().getDrawable( R.drawable.buttunbackground));
             final Intent projectFrame = new Intent( YourProjects.this, MainProjectPage.class);
             final int finalI = i;
+
             ref.addValueEventListener(new ValueEventListener() {
 
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                    Log.i("data", dataSnapshot.getValue().toString());
                     Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
-                    List<String> valueList = new ArrayList<String>(map.keySet());
+                    final List<String> valueList = new ArrayList<String>(map.keySet());
                     List<String> valueList2 = new ArrayList<String>(Collections.singleton(String.valueOf(map.values())));
-                    Log.d("new data", valueList.get(0));
-                    Log.d("new data", valueList2.get(0));
+
+                    final String invitaitionCode;
 
                     if (finalI < valueList.size()) {
-                        button.setText(valueList.get(finalI));
+
+
+                        invitaitionCode = (String) map.get( valueList.get(finalI));
+
+                        button.setText( valueList.get(finalI));
+
                         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 LinearLayout.LayoutParams.WRAP_CONTENT);
+
                         params.setMargins( 100, 50, 100, 0);
+
                         button.setLayoutParams(params);
+
                         button.setOnClickListener(new View.OnClickListener() {
+
                             @Override
                             public void onClick(View v) {
+
+                                projectFrame.putExtra( "ProjectCode", invitaitionCode);
+                                projectFrame.putExtra( "Project Name", valueList.get(finalI));
                                 startActivity( projectFrame);
+
                             }
                         });
+                        if(linearLayout.getParent() == null) {
+
+                            ((ViewGroup)linearLayout.getParent()).removeView(linearLayout);
+
+                        }
+
                         linearLayout.addView(button);
                     }
-
 
                 }
 
@@ -120,8 +137,9 @@ public class YourProjects extends AppCompatActivity {
 
         final Intent backToMainMenu = new Intent( YourProjects.this, NewFrame.class);
 
+
+
         Button backButton = new Button(this);
-        backButton.setBackgroundColor(0000000);
         backButton.setText( "Back to Menu");
         backButton.setBackground( this.getResources().getDrawable( R.drawable.backcuttonbackground));
         linearLayout.addView(backButton);
@@ -134,14 +152,5 @@ public class YourProjects extends AppCompatActivity {
         });
     }
 
-    public void setArray( ArrayList<String> list)
-    {
-        this.list = list;
-    }
-
-    public ArrayList<String> getArray()
-    {
-        return list;
-    }
 }
 

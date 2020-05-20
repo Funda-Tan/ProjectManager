@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:padding="5dp"
         android:text=" Project Manager"
-        android:textColor="#535050"
+        android:textColor = "#000000"
         android:textSize="50sp" />
 
     <EditText
