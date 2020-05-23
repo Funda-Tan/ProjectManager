@@ -9,7 +9,7 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 This week I started looking at Android Studio patterns and Firebase, discussed how should we start and proceed with our project with my group.
 
 ### ~ 04.05.2020 ~
-This week we assigned different classes for each member and I started writing the MainProjectPage class. In addition, I will work on integrating the others' codes to the database with Cem.
+This week we assigned different classes for each member and I started looking for ways of writing the MainProjectPage class. In addition, I will work on integrating the others' codes to the database with Cem.
 
 ### ~ 11.05.2020 ~
 This week I kept working on the MainProjectPage class and the buttons are done. The functions of these buttons will cover the rest of my work with the design and database parts.
