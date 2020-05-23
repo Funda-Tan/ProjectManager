@@ -17,4 +17,7 @@ This week I kept working on the MainProjectPage class and the buttons are done. 
 ### ~ 18.05.2020 ~
 We met a lot as a group and made the last bits of changes, then we recorded our project demo. I edited the video and uploaded it to Youtube.
 
+### What did I learn?
+Although my part of code wasn't very huge, the main struggle was to correctly combine the others' code and to integrate it to Firebase. I learnt features of Firebase and structure of AndroidStudio during the project period, also, this was a great practice for me to organize teammates and work as a group.
+
 ****
