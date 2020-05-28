@@ -14,7 +14,7 @@ on a calendar, and make changes in the project details.
 + **UI Design:** completed (28.03.2020)
 + **Detailed Design:** completed (20.04.2020)
 + **Implementation:** completed (18.05.2020)
-+ **Reflections:** in progress
++ **Reflections:** completed (28.05.2020)
 
 ## Current Status
 Major part of the application is done, as well as login and sign-up pages, welcome page for the user, the page for creating a new project or joining an existing one, main page of a particular project and finally the participant control pages. What remains to be done is the extra chat interface and progression page for assignments.
