@@ -11,6 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * _This class is a sign up page ___
+ * @author __Onat Korkmaz___
+ * @version __17-05-2019__
+ */
 public class MainProjectPage extends AppCompatActivity {
 
     //Properties
@@ -24,6 +29,9 @@ public class MainProjectPage extends AppCompatActivity {
 
     //Methods
 
+    /**
+     * This method defines all buttons and text views
+     */
     public void define()
     {
 

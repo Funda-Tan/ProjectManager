@@ -9,6 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * _This class show account settings to user ___
+ * @author __Elifnur Alsaç___
+ * @version __11-05-2019__
+ * @not___ not completed___
+ */
+
 public class AccountSettings extends AppCompatActivity {
 
     //Properties

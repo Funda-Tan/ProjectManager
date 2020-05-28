@@ -22,6 +22,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+/**
+ * _This class show all participants in project ___
+ * @author __Onat Korkmaz___
+ * @version __17-05-2019__
+ */
 
 public class ParticipantsPage extends AppCompatActivity {
 

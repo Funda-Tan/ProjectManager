@@ -12,75 +12,78 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="assıgnment Name"
+        android:text="Assignment Name"
+        android:textColor="#B71C1C"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textName"
+        android:textColor="#000000"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="assıgnment Description"
+        android:text="Assignment Description"
+        android:textColor="#B71C1C"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textDescription"
+        android:textColor="#000000"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="assıgnment Start Date"
+        android:text="Assignment Start Date"
+        android:textColor="#B71C1C"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textStartDate"
+        android:textColor="#000000"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="assıgnmentEndDate"
+        android:text="Assignment End Date"
+        android:textColor="#B71C1C"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textEndDate"
+        android:textColor="#000000"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="assıgn to"
+        android:text="Assign To"
+        android:textColor="#B71C1C"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textAssignTo"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="assıgned by"
+        android:textColor="#000000"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textAssignBy"
-        />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/backcuttonbackground"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:text="Back"
         android:id="@+id/button"
         />

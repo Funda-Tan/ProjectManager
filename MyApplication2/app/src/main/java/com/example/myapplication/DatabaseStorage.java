@@ -30,6 +30,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * _This class is not used by main code anymore___
+ * @author __Cem Apaydın___
+ * @version __9-05-2019__
+ */
+
 public class DatabaseStorage {
 
     private FirebaseDatabase database;

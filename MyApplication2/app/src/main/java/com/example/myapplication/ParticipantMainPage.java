@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * _This class add a project to database ___
+ * @author __Funda Tan___
+ * @version __20-05-2019__
+ */
 public class ParticipantMainPage extends AppCompatActivity {
 
     //Properties

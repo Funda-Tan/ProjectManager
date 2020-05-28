@@ -19,6 +19,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * _This class add a assignment to database ___
+ * @author __Cem Apaydın___
+ * @version __22-05-2019__
+ */
+
 public class AddAssignment extends AppCompatActivity {
     //Properties
     private EditText assignmentName;
@@ -33,6 +39,12 @@ public class AddAssignment extends AppCompatActivity {
 
     //Methods
 
+    /**
+     * add assignment's unique code to project in database
+     * @param name name of the assignment
+     * @param projectCode project's unique code for take variables from database
+     * @param assignmentCode1 assignment's unique code for add it to project in database
+     */
     public void addAssignmentToProject(final String name, String projectCode, String assignmentCode1)
     {
 
@@ -54,6 +66,12 @@ public class AddAssignment extends AppCompatActivity {
 
     }
 
+    /**
+     * add assignment's unique code to user in database
+     * @param name name of the assignment
+     * @param userName user's unique code for take variables from database
+     * @param assignmentCode1 assignment's unique code for add it to project in database
+     */
     public void addAssignmentToUser(final String name, String userName, String assignmentCode1)
     {
 
@@ -75,6 +93,10 @@ public class AddAssignment extends AppCompatActivity {
 
     }
 
+    /**
+     * create a random string for assignment's unique code
+     * @return  a random string with 10 character length
+     */
     public String RandomString() {
 
         String charSequence = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "abcdefghijklmnopqrstuvxyz";

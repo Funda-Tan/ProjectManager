@@ -24,6 +24,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * _This class is a sign up page ___
+ * @author __Ece Korkmaz and Cem Apaydın___
+ * @version __8-05-2019__
+ */
+
 public class Register_Page extends AppCompatActivity {
 
     //Variables
@@ -54,6 +60,13 @@ public class Register_Page extends AppCompatActivity {
         return stm;
     }
 
+    /**
+     * Sign up a new user to database
+     * @param name name of the user
+     * @param password password of the user
+     * @param eMail eMail of the user
+     */
+
     public boolean newUser(final String eMail, final String name, final String password)
     {
 
@@ -77,7 +90,6 @@ public class Register_Page extends AppCompatActivity {
                     user.put( "Name", name);
                     user.put( "Password", password);
                     user.put( "Email Adress", eMail);
-                    user.put( "Project Number", 0);
                     DocumentReference ref = fStore.collection( "users").document(userID);
                     ref.set( user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -120,7 +132,7 @@ public class Register_Page extends AppCompatActivity {
                 else if(TextUtils.isEmpty(passwordMessage)){
                     Toast.makeText(getApplicationContext(),"Please Enter a Password",Toast.LENGTH_SHORT).show();
                 }
-                else if(passwordMessage.length()<7){
+                else if( passwordMessage.length() < 7){
                     Toast.makeText(getApplicationContext(),"Password length must at least 6",Toast.LENGTH_SHORT).show();
                 }
 

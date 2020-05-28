@@ -20,10 +20,12 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
 
+/**
+ * _This class is a sign in page ___
+ * @author __Ece Korkmaz and Cem Apaydın___
+ * @version __8-05-2019__
+ */
 public class MainActivity extends AppCompatActivity {
 
     //Variables
@@ -44,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Sign in method of class
+     * @param userName name of the user
+     * @param password password of the user
+     */
     public void signIn( String userName, String password)
     {
 
@@ -68,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
 
                                     Intent MainMenu = new Intent(MainActivity.this, NewFrame.class);
+
                                     MainMenu.putExtra("Input", documentSnapshot.getString( "Name"));
                                     MainMenu.putExtra( "UserID", userID);
+
                                     startActivity(MainMenu);
 
                                 }
@@ -90,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This method passes to RegisterPage
+     */
     public void signUp()
     {
 

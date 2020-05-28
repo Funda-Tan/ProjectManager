@@ -22,6 +22,12 @@ import java.util.Map;
 
 import javax.net.ssl.SSLContext;
 
+/**
+ * _This class show assignments of a project ___
+ * @author __Cem Apaydın and Onat Korkmaz___
+ * @version __19-05-2019__
+ */
+
 public class AssignmentsProject extends AppCompatActivity {
 
     //Porperties
@@ -63,27 +69,27 @@ public class AssignmentsProject extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                    Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
+                    final Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
                     assert map != null;
                     final List<String> valueList = new ArrayList<String>(map.keySet());
 
                     if( finalI < valueList.size()) {
 
-                        assignmentCode = (String) map.get( valueList.get(finalI));;
+                        assignmentCode = (String) map.get( valueList.get(finalI));
                         System.out.println( assignmentCode);
 
                         button.setText(valueList.get(finalI));
-                        System.out.println(valueList.get(finalI));
+
                         button.setLayoutParams(params);
 
                         button.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
 
-                                Intent ıntent = new Intent(AssignmentsProject.this, ParticipantMainPage.class);
+                                Intent ıntent = new Intent(AssignmentsProject.this, AssignmentView.class);
 
                                 ıntent.putExtra("Project Name", valueList.get(finalI));
-                                ıntent.putExtra("Assignment Code", assignmentCode));
+                                ıntent.putExtra("Assignment Code", (String) map.get( valueList.get(finalI)));
                                 ıntent.putExtra("ProjectCode", get.getStringExtra("name"));
 
                                 startActivity(ıntent);

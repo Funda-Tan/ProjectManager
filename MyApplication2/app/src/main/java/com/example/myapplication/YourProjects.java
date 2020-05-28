@@ -38,6 +38,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
+/**
+ * _This class show projects of a user  ___
+ * @author __Cem Apaydın___
+ * @version __10-05-2019__
+ */
+
 public class YourProjects extends AppCompatActivity {
 
     //Properties

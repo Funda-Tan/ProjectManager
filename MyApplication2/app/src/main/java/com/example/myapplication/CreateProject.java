@@ -20,6 +20,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * _This class add a project to database ___
+ * @author __Elifnur Alsaç and Onat Korkmaz___
+ * @version __17-05-2019__
+ */
+
 public class CreateProject extends AppCompatActivity {
 
     //properties
@@ -33,7 +39,7 @@ public class CreateProject extends AppCompatActivity {
     private String startDate;
     private String endDate;
     private String describtion;
-    private String inventation;
+    private String invitation;
     private String userID;
     private FirebaseAuth mAuth;
     private FirebaseDatabase database;
@@ -42,6 +48,11 @@ public class CreateProject extends AppCompatActivity {
 
     //Methods
 
+    /**
+     * add user's unique code to project in database
+     * @param name name of the user
+     * @param projectCode assignment's unique code for add it to user in database
+     */
     public void addUserToProject( String name, String projectCode)
     {
 
@@ -72,6 +83,10 @@ public class CreateProject extends AppCompatActivity {
     }
 
 
+    /**
+     * create a random string for assignment's unique code
+     * @return  a random string with 10 character length
+     */
     public String RandomString() {
 
         String charSequence = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "abcdefghijklmnopqrstuvxyz";
@@ -89,6 +104,13 @@ public class CreateProject extends AppCompatActivity {
         return sb.toString();
     }
 
+    /**
+     * add assignment's unique code to user in database
+     * @param name name of the project
+     * @param describtion describtion of the project
+     * @param startDate start date of the project
+     * @param endDate end date of the project
+     */
     public String createProject( String name, String describtion, String startDate, String endDate)
     {
 
@@ -120,7 +142,12 @@ public class CreateProject extends AppCompatActivity {
 
     }
 
-    public String addProjectToUser(final String invantation, String name)
+    /**
+     * add assignment's unique code to user in database
+     * @param name name of the project
+     * @param invitation project's unique code for add it in database
+     */
+    public String addProjectToUser(final String invitation, String name)
     {
 
         fStore = FirebaseFirestore.getInstance();
@@ -134,7 +161,7 @@ public class CreateProject extends AppCompatActivity {
         final String[] key = new String[1];
 
         userID = mAuth.getCurrentUser().getUid();
-        ref2 = fStore.collection( "Projects").document(invantation);
+        ref2 = fStore.collection( "Projects").document(invitation);
 
         ref = database.getReference(name);
 
@@ -143,12 +170,12 @@ public class CreateProject extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 ref1[0] = ref.child( "Project " + documentSnapshot.getString("Name"));
 
-                ref1[0].setValue( invantation);
+                ref1[0].setValue( invitation);
             }
         });
 
 
-        return invantation;
+        return invitation;
     }
 
     @Override
@@ -177,11 +204,11 @@ public class CreateProject extends AppCompatActivity {
 
                 Intent createProject = new Intent(CreateProject.this, RandomString.class);
 
-                inventation = createProject( name, describtion, startDate, endDate);
-                addProjectToUser(inventation, get.getStringExtra( "name"));
-                addUserToProject( get.getStringExtra( "name"), inventation);
+                invitation = createProject( name, describtion, startDate, endDate);
+                addProjectToUser(invitation, get.getStringExtra( "name"));
+                addUserToProject( get.getStringExtra( "name"), invitation);
 
-                createProject.putExtra( "inventation", inventation);
+                createProject.putExtra( "inventation", invitation);
                 createProject.putExtra( "Project Name", name);
 
                 startActivity( createProject);

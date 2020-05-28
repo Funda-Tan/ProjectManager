@@ -12,6 +12,13 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * _This class show main user menu and buttons ___
+ * @author __Funda Tan___
+ * @version __17-05-2019__
+ */
+
+
 public class NewFrame extends AppCompatActivity {
 
     //Variables

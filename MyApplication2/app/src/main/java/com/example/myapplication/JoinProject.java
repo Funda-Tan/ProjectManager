@@ -27,7 +27,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * _This class add a project to database ___
+ * @author __Cem Apaydın___
+ * @version __11-05-2019__
+ */
 public class JoinProject extends AppCompatActivity {
 
     private EditText editText;
@@ -41,6 +45,11 @@ public class JoinProject extends AppCompatActivity {
 
     //Methods
 
+    /**
+     * add project's unique code to user in database
+     * @param name name of the user
+     * @param invantation assignment's unique code for add it to user in database
+     */
     public String addProjectToUser(final String invantation, String name)
     {
 
@@ -72,6 +81,11 @@ public class JoinProject extends AppCompatActivity {
         return invantation;
     }
 
+    /**
+     * add user's unique code to project in database
+     * @param name name of the user
+     * @param projectCode assignment's unique code for add it to user in database
+     */
     public void addUserToProject( String name, String projectCode)
     {
 
