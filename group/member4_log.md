@@ -14,5 +14,7 @@ This week I started writing the CreateProject class, except database part, and c
 ### ~ 11.05.2020 ~
 This week I started writing the AccountSettings class, except database part.
 
+### ~ What did I learn? ~
+I learned to combine the codes and protect the whole by doing as group project. I learned a little about the database and learned to use Android Studio.
 
 ****
