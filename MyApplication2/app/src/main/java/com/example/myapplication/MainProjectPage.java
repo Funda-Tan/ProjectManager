@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * _This class is a sign up page ___
+ * _This class is main page of project and show buttons ___
  * @author __Onat Korkmaz___
  * @version __17-05-2019__
  */
