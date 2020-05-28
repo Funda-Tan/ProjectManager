@@ -19,7 +19,7 @@ This week I create AddAssignment and AssignmentView classes and finish the integ
 
 ### What did I learn?
 
-I learned how to use Firebase database nad Android Studio. I struggled with integrate database to our code while writing my part of code. 
+I learned how to use Firebase database and Android Studio. I struggled with integrate database to our code while writing my part of code. Also I learned XML a little bit for design our pages apperances.  I  think this project process was a great experience for me to organize teammates and work as a group.
 
 
 ****
