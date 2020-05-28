@@ -1,6 +1,7 @@
-Reflections
-  We found this project very useful in terms of a learning experience as it enabled us to work as a group, think as a group, and deciding 
-as a group. We learned lots of things like using Android Studio, creating Firebase, and using it inside our project, designing interfaces, 
-keeping track of what we did, etc. The difficult aspect was integrating each person's code but thanks to Github, we integrated what we did
-into our project very easily. Also, Github was useful for keeping record of what we did, assigning classes to each person, and see what we
+## Reflections
+
+We found this project very useful in terms of a learning experience as it enabled us to work as a group, think as a group, and deciding as 
+a group. We learned lots of things like using Android Studio, creating Firebase, and using it inside our project, designing interfaces, 
+keeping track of what we did, etc. The difficult aspect was integrating each person's code but thanks to Github, we integrated what we did 
+into our project very easily. Also, Github was useful for keeping record of what we did, assigning classes to each person, and see what we 
 did in each meeting and each week. 
