@@ -12,6 +12,14 @@ This week I learn how firebase database works and how I can integrate to our pro
 This week I build a databse stroge class for database integration in our code.
 
 ### ~ 11.05.2020 ~
-This week I deal with the randomString class which generate a invitation code for project.
+This week I deal with the randomString class which generate a invitation code for project. Also I create the JoinProject and YourProjects classes.
+
+### ~ 19.05.2020 ~
+This week I create AddAssignment and AssignmentView classes and finish the integration of database to our code.
+
+### What did I learn?
+
+I learned how to use Firebase database nad Android Studio. I struggled with integrate database to our code while writing my part of code. 
+
 
 ****
