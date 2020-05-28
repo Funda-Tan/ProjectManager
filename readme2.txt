@@ -20,11 +20,11 @@ on a calendar, and make changes in the project details.
 Major part of the application is done, as well as login and sign-up pages, welcome page for the user, the page for creating a new project or joining an existing one, main page of a particular project and finally the participant control pages. What remains to be done is the extra chat interface and progression page for assignments.
 
 ## Task Distribution
-Ece:
-Elif:
-Cem:
-Onat:
-Funda:
+Ece: RegisterPage + AdministrationPage + GitHub
+Elif: CreateProject + AccountSettings
+Cem: JoinProject + YourProjects + AddAssignment + AssignmentView + Firebase
+Onat: MainProjectPage + ProjectActivity + Firebase
+Funda: NewFrame + ParticipantsMainPage
 
 Each member wrote the java classes which are assigned above. In addition, we discussed for a common design pattern for the xml files and
 finally we combined all of them as a group. With the adjustments on the java files for integration to the database, the application is
