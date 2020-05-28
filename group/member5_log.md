@@ -14,4 +14,6 @@ This week I was assigned with register page, administration page, and main activ
 ### ~ 13.05.2020 ~
 This week I completed register page and administration page codes, and Cem will connect it to the database. I moved to writing the main activity classes. Hopefully I will quickly complete them.
 
+### ~ What did I learn? ~
+This project was the opportunity for me learn how to use Android Studio, besides that I learned a bit about databases. I also learned how to work with other people's codes and how to combine them.
 ****
